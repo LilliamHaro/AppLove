@@ -71,3 +71,182 @@ a:hover {
 
 /*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
 
+header {
+  height: 110px;
+  background-color: white;
+  padding-right: 130px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.top-menu {
+  float: left;
+  padding: 40px 0 0 200px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight:bold; /*no funciona .-.*/
+}
+.top-menu a {
+  margin-right: 45px;
+}
+figure {
+  width: 80px;
+  height: 80px;
+  float: right;
+}
+.logo {
+  max-width: 100%;
+}
+.image {
+  margin-top: 110px;
+  position: relative;
+  z-index: -1;/*al tener problemas con las superposciones de elementos con position:absolute o relative con el meu seuperior fijado, investigué y encontré esta propiedad que maneja el orden capas de los elementos*/
+}
+.image-central {
+  width: 100%;
+  height: 650px;
+}
+.superior-title {
+  position:absolute;
+  top:10%;
+  left: 550px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+.central-title {
+  position: absolute;
+  top:150px;
+  left: 303px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 59px;
+}
+.bottom-text {
+  position: absolute;
+  top:300px;
+  left: 450px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+.button {
+  background-color: rgb(46, 204, 113);
+  width: 150px;
+  height: 60px;
+  display: block;
+  position: absolute;
+  top:400px;
+  left: 650px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 3px;
+}
+.services {
+  width: 100%;
+  height: 700px;
+  background-color: rgb(241, 124, 114);
+  z-index: -1;
+  position: relative;
+  padding-left:280px;
+  overflow: auto;
+}
+.superior-subtitle {
+  position:absolute;
+  top:43px;
+  left: 650px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 35px;
+}
+.services h4 {
+  position:absolute;
+  top:140px;
+  left:360px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+.column-services {
+  width: 220px;
+  float: left;
+  padding-top: 310px;
+  margin-right: 160px;
+}
+.column-services img {
+  width: 200px;
+  height: 200px;
+}
+.column-services h5,h6 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+.column-services h6 {
+  line-height: 0;
+  margin:20px;
+}
+.last-section {
+  z-index: -1;
+  position: relative;
+}
+.last-section h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 35px;
+  position: absolute;
+  top: 70px;
+  left: 680px;
+}
+.last-section .work-text {
+  position: absolute;
+  top: 170px;
+  left: 350px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+.work-image img {
+  width: 1000px;
+  height: 900px;
+  position: absolute;
+  top: 320px;
+  left: 250px;
+}
+.galery {
+  width: 75%;
+  overflow: auto;
+  position: absolute;
+  top: 1250px;
+  margin-left: 205px;
+
+}
+.galery-image {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin:0 73px 70px 0;
+}
+.galery-image img {
+  max-width: 100%;
+}
+.cut {
+  clear: left;
+}
+.galery-image h4 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+footer {
+  height: 70px;
+  width: 100%;
+  background-color: rgb(55, 59, 71);
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 4200px;
+  font-family: 'Raleway', sans-serif;
+}
