@@ -3,6 +3,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
 *:before, *:after {
@@ -70,66 +71,65 @@ a:hover {
 }
 
 /*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
-
+/*navegador superior*/
 header {
   height: 110px;
   background-color: white;
   padding-right: 130px;
-  position: fixed;
+  position: fixed; /*usamos fixed para posicionar permanenetemente el header en la parte superior*/
   top: 0;
   right: 0;
   left: 0;
 }
 .top-menu {
   float: left;
-  padding: 40px 0 0 200px;
-  font-family: 'Raleway', sans-serif;
+  padding: 40px 0 0 200px; /*ubicamos el pequeño menú con ayuda de padding*/
   font-size: 18px;
-  font-weight:bold; /*no funciona .-.*/
 }
 .top-menu a {
-  margin-right: 45px;
+  margin-right: 45px; /*separacion del lado derecho entre las opciones del menu*/
 }
+
 figure {
   width: 80px;
   height: 80px;
-  float: right;
+  float: right; /*hacemos que el icono flote a la derecha opuesto al menu*/
 }
 .logo {
   max-width: 100%;
 }
+/*Primera seccion*/
 .image {
-  margin-top: 110px;
-  position: relative;
-  z-index: -1;/*al tener problemas con las superposciones de elementos con position:absolute o relative con el meu seuperior fijado, investigué y encontré esta propiedad que maneja el orden capas de los elementos*/
+  margin-top: 115px;
+  position: relative; /*usamos relative para que los futuros elementos con absolute lo tomen como eje*/
+  z-index: -1;/*al tener problemas con las superposciones de elementos con position:absolute o relative con el menu seuperior fijado, encontré esta propiedad que maneja el orden capas*/
 }
 .image-central {
   width: 100%;
-  height: 650px;
+  height: 630px;
 }
+/*posicionando los titulos sobre la imagen con absolute*/
 .superior-title {
   position:absolute;
-  top:10%;
-  left: 550px;
+  top:100px;
+  left: 490px;
   color: white;
-  font-family: 'Raleway', sans-serif;
 }
 .central-title {
   position: absolute;
   top:150px;
-  left: 303px;
+  left: 300px;
   color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 59px;
+  font-size: 50px;
 }
 .bottom-text {
   position: absolute;
-  top:300px;
-  left: 450px;
+  top:270px;
+  left: 390px;
   color: white;
-  font-family: 'Raleway', sans-serif;
   font-size: 18px;
 }
+/*añadimos estilos al boton*/
 .button {
   background-color: rgb(46, 204, 113);
   width: 150px;
@@ -137,45 +137,45 @@ figure {
   display: block;
   position: absolute;
   top:400px;
-  left: 650px;
+  left: 600px;
   color: white;
-  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   text-align: center;
   line-height: 60px;
   border-radius: 3px;
 }
+/*segunda seccion*/
 .services {
   width: 100%;
   height: 700px;
   background-color: rgb(241, 124, 114);
-  z-index: -1;
-  position: relative;
-  padding-left:280px;
-  overflow: auto;
+  z-index: -1; /*para que no se superponga al navegador fijado*/
+  position: relative;/*para que los futuros elementos dentro de esta sección que usen absolute tomen como eje el contenedor padre*/
+  padding-left:240px;
+  overflow: auto;/*para que los elementos flotates no salgan del contenedor padre*/
 }
+/*ubicamos los textos de la segunda sección*/
 .superior-subtitle {
   position:absolute;
   top:43px;
-  left: 650px;
+  left: 600px;
   color: white;
-  font-family: 'Raleway', sans-serif;
   font-size: 35px;
 }
 .services h4 {
   position:absolute;
   top:140px;
-  left:360px;
+  left:295px;
   color: white;
-  font-family: 'Raleway', sans-serif;
   text-align: center;
   font-size: 18px;
 }
+/*acomodamos tres columnas flotantes a la izquierda en la sección*/
 .column-services {
-  width: 220px;
+  width: 200px;
   float: left;
   padding-top: 310px;
-  margin-right: 160px;
+  margin-right: 140px;
 }
 .column-services img {
   width: 200px;
@@ -183,61 +183,64 @@ figure {
 }
 .column-services h5,h6 {
   color: white;
-  font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 .column-services h6 {
   line-height: 0;
   margin:20px;
 }
+/* ultima sección*/
 .last-section {
+  width:100%;
+  height: 2700px;
   z-index: -1;
-  position: relative;
+  position: relative;/*para que los futuros elemento que usen absolute tomen este contenedor como eje*/
 }
+/*posiscionando textos*/
 .last-section h2 {
-  font-family: 'Raleway', sans-serif;
   font-size: 35px;
   position: absolute;
-  top: 70px;
-  left: 680px;
+  top: 50px;
+  left: 610px;
 }
 .last-section .work-text {
   position: absolute;
-  top: 170px;
-  left: 350px;
+  top: 140px;
+  left: 280px;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   text-align: center;
 }
+/*posicionando la imagen central de la última sección*/
 .work-image img {
   width: 1000px;
   height: 900px;
   position: absolute;
-  top: 320px;
-  left: 250px;
+  top: 270px;
+  left: 180px;
 }
+/*añadiendo estilos a la galería final de imagenes*/
 .galery {
-  width: 75%;
+  width: 85%;
   overflow: auto;
   position: absolute;
   top: 1250px;
-  margin-left: 205px;
-
+  margin-left: 150px;
 }
 .galery-image {
+  /*le damos un tamaño fijo al contenedor de la imagen*/
   width: 300px;
   height: 300px;
   float: left;
   margin:0 73px 70px 0;
 }
 .galery-image img {
-  max-width: 100%;
+  max-width: 100%; /*la imagen se ajustara al tamaño de su contenedor*/
 }
 .cut {
-  clear: left;
+  clear: left; /*para crear nuevas filas usamos clear: left en el cuarto y septimo elemnto para que no hayan  floats a su derecha y le obligue a bajar a la siguiente linea*/
 }
 .galery-image h4 {
-  font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 footer {
@@ -245,8 +248,6 @@ footer {
   width: 100%;
   background-color: rgb(55, 59, 71);
   text-align: center;
+  line-height: 70px;
   color: white;
-  position: absolute;
-  top: 4200px;
-  font-family: 'Raleway', sans-serif;
 }
