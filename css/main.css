@@ -88,6 +88,7 @@ header {
 }
 .top-menu a {
   margin-right: 45px; /*separacion del lado derecho entre las opciones del menu*/
+  cursor: pointer;/*aplicamos cursos:pinter para que al pasar el cursor por los elementos anchor, este tomer forma de pointer*/
 }
 
 figure {
