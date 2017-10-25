@@ -15,4 +15,4 @@
 - Vista al hacer scroll
 - [Recursos](assets/images/applove-scroll.png)
 - Vista de la parte Final
-- [[Recursos](assets/images/applove-footer.png)]
+- [Recursos](assets/images/applove-footer.png)]
